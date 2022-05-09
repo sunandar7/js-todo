@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />        <link href="css/login.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="background" class="background"></div>
+        <div class="container">
+            <h2>User Login</h2>
+            <span id="error"></span>
+            <form id="form" action="" method="">
+                <div class="form-group">
+                    <i class="far fa-user"></i>
+                    <input type="text" name="user" id="user" class="form-control" placeholder="Enter username" autocomplete="off" required />
+                </div>
+                <div class="form-group">
+                    <i class="far fa-key"></i>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required/>
+                    <i id="eye" class="fas fa-eye"></i>
+                </div>
+                <i class="far fa-lock-open"></i>
+                <button type="submit" id="loginbtn" class="btn">Login</a></button></a>
+                
+            </form>
+            <p>Forget Password?</p>
+        </div>
+
+        <script src="js/login.js" type="text/javascript"></script>
+    </body>
+</html>
+<!-- onclick="location.href='index.html'" -->

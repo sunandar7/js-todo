@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+
+    position: relative;
+}
+.background{
+    background-image: url(../libs/image/todonote2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+
+    filter: blur(1px);
+    z-index: -1;
+}
+.container{
+    width: 350px;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+}
+h2{
+    text-align: center;
+    margin: 0;
+}
+.fa-stopwatch{
+    font-size: 20px;
+    color: #266680;
+    margin-top: 20px;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    background-color: #266680;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 0;
+    margin: 30px 120px;
+    transition: display 1s ease;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.93);
+}
+.input{
+    width: 100%;
+    font-size: 20px;
+    font-family: inherit;
+    color: #707070;
+    border: 1px solid #d0d4d6;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    transition: display 1s ease;
+}
+
+.input.show{
+    display: block;
+}
+.input:focus{
+    outline:1px solid #266680;
+}
+.todos{
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.todos li{
+    font-size: 20px;
+    border-top: 1px solid;
+}
+.todolis{
+    width: 100%;
+    height: 180px;
+    overflow: auto; 
+}
+
+.todolis div p.completed{
+    color:#e6e3df;
+    text-decoration: line-through;
+}

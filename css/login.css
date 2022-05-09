@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+
+    position: relative;
+}
+.background{
+    background-image: url(../libs/image/todonote1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    top:-20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+
+    filter: blur(16px);
+    z-index: -1;
+}
+.container{
+    width: 350px;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: center;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+h2{
+    margin: 0;
+}
+span{
+    color: red;
+    font-size: 12px;
+}
+.form-group{
+    margin: 30px 10px;
+    position: relative;
+}
+.form-group .far{
+    font-size: 20px;
+    background-color: #fff;
+    color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    
+    margin: 0;
+    padding: 10px;
+}
+.form-control{
+    width: 80%;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 50px;
+    border: 0;
+    padding: 8px 5px;
+}
+.form-control:focus{
+    outline: none;
+}
+.fa-lock-open{
+    font-size: 20px;
+    background-color: #fff;
+    color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    
+    margin: 0;
+    padding: 10px;
+}
+.fa-eye,.fa-eye-slash{
+    color: #000;
+    font-size: 14px;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+}
+.btn{
+    width: 75%;
+    background-color: #fff;
+    color: teal;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 6px 5px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.97);
+}
